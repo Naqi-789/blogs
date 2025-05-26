@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> Blog</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -129,6 +132,12 @@
             padding: 20px 10px;
             margin-top: 40px;
         }
+        #log-out{
+            background-color: #1e2a38;
+             color: #bbb;
+              text-align: center;
+            padding: 4px 10px;
+        }
     </style>
 </head>
 
@@ -141,7 +150,7 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="/login.html">Sign In</a></li>
-             <li class="log-out">>Log out</li>
+           <li><a href="/login.html"><button id="log-out"onclick="logOut()">Logout</button></a></li> 
 
         </ul>
     </nav>
@@ -185,6 +194,8 @@
     <footer>
         <p>&copy; 2025 Pathan Hotel Blog. All rights reserved.</p>
     </footer>
+
+<script type="module" src="script.js"></script>
 
 </body>
 
